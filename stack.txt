@@ -1,0 +1,797 @@
+1. What is a stack?
+A) A data structure that follows FIFO order.
+B) A data structure that follows LIFO order. (Correct)
+C) A collection of key-value pairs.
+D) A type of linked list.
+Example: A stack of plates where you can only add or remove the top plate.
+
+2. Which Python data type can be used to implement a stack?
+A) List (Correct)
+B) Tuple
+C) Dictionary
+D) Set
+Example: Using a Python list to create a stack by appending and popping elements.
+
+3. Which operation removes the top element from the stack?
+A) push
+B) pop (Correct)
+C) peek
+D) add
+Example: Calling stack.pop() removes and returns the last element added.
+
+4. What will stack.pop() return if the stack is empty?
+A) None
+B) An error (Correct)
+C) 0
+D) A warning message
+Example: stack.pop() on an empty stack raises an IndexError.
+
+5. Which operation adds an element to the top of the stack?
+A) add
+B) push (Correct)
+C) insert
+D) append
+Example: stack.append(10) effectively behaves like a push operation.
+
+6. What does the stack[-1] operation do?
+A) Removes the top element.
+B) Returns the bottom element.
+C) Returns the top element without removing it. (Correct)
+D) Checks if the stack is empty.
+Example: top_item = stack[-1] retrieves the last item without popping it.
+
+7. How do you check if a stack is empty in Python?
+A) if stack.is_empty():
+B) if len(stack) == 0: (Correct)
+C) if stack.size() == 0:
+D) if stack.count() == 0:
+Example: Checking if len(stack) == 0: confirms if the stack has no elements.
+
+8. What is the time complexity of the push operation in a stack?
+A) O(n)
+B) O(log n)
+C) O(1) (Correct)
+D) O(n^2)
+Example: Pushing an element onto a stack is done in constant time.
+
+9. What is the time complexity of the pop operation in a stack?
+A) O(n)
+B) O(log n)
+C) O(1) (Correct)
+D) O(n^2)
+Example: Removing the top element from a stack is done in constant time.
+
+10. What happens if you try to pop from an empty stack?
+A) Returns None
+B) Raises an IndexError (Correct)
+C) Returns 0
+D) Returns the last value added
+Example: Attempting stack.pop() on an empty stack raises an error.
+
+11. What is the main advantage of using a stack?
+A) Random access
+B) Easy traversal
+C) Efficient memory usage (Correct)
+D) Automatic sorting
+Example: Stacks can efficiently handle recursive function calls and backtracking.
+
+12. How can you implement a stack in Python using a class?
+A) By using only functions.
+B) By using a list as the underlying structure. (Correct)
+C) By using tuples.
+D) By using a dictionary.
+Example: A Stack class with methods to push and pop using a list.
+
+13. Which built-in Python function can be used to reverse a stack?
+A) reverse()
+B) flip()
+C) sorted()
+D) list[::-1] (Correct)
+Example: stack = list(reversed(stack)) reverses the order of elements in the stack.
+
+14. Which of the following can cause a stack overflow?
+A) Pushing elements until memory is exhausted (Correct)
+B) Popping elements repeatedly
+C) Checking the size of the stack
+D) Iterating through the stack
+Example: Continuously pushing elements without popping can lead to memory exhaustion.
+
+15. How would you implement a stack using collections in Python?
+A) Using a normal list.
+B) Using deque from collections module. (Correct)
+C) Using a tuple.
+D) Using a set.
+Example: from collections import deque; stack = deque() for efficient append and pop operations.
+
+16. Which of the following scenarios is best suited for using a stack?
+A) Tracking browser history (Correct)
+B) Storing user data
+C) Maintaining a list of products
+D) Storing key-value pairs
+Example: A stack can effectively manage back and forward navigation in web browsers.
+
+17. What will the following code output?
+python
+Copy code
+stack = [1, 2, 3]
+print(stack.pop())
+A) 1
+B) 2
+C) 3 (Correct)
+D) None
+Example: The last element, 3, will be removed and returned.
+
+18. In which of the following situations would a stack be inappropriate?
+A) Implementing function calls
+B) Undoing actions in an application
+C) Storing a list of tasks in priority order (Correct)
+D) Traversing tree structures
+Example: A priority queue is more suitable for tasks based on priority.
+
+19. What is a common application of stacks in programming languages?
+A) Variable storage
+B) Function call management (Correct)
+C) Database queries
+D) Sorting algorithms
+Example: Stacks are used to handle function calls and return addresses in memory.
+
+20. What Python method can be used to get the length of a stack?
+A) size()
+B) length()
+C) len() (Correct)
+D) count()
+Example: len(stack) returns the number of elements in the stack.
+
+21. Which of the following is a valid stack operation?
+A) enqueue
+B) push (Correct)
+C) popfront
+D) add
+Example: stack.append(value) effectively acts as a push operation.
+
+22. When using a list as a stack, which operation is considered inefficient?
+A) pop()
+B) append()
+C) insert() (Correct)
+D) indexing
+Example: stack.insert(0, value) is inefficient as it shifts all other elements.
+
+23. Which of the following describes the peek operation?
+A) Removes an element from the stack.
+B) Adds an element to the stack.
+C) Returns the top element without removing it. (Correct)
+D) Checks if the stack is empty.
+Example: top = stack[-1] allows you to see the top element without modifying the stack.
+
+24. What will happen if you perform stack.pop() on a stack with one element?
+A) Returns None
+B) Returns the element and leaves the stack empty. (Correct)
+C) Raises an error
+D) Returns 0
+Example: If the stack contains [5], stack.pop() will return 5, leaving the stack empty.
+
+25. Which of the following data structures is LIFO?
+A) Queue
+B) Stack (Correct)
+C) Array
+D) Hash Table
+Example: A stack allows for the last element added to be the first one removed.
+
+26. What is the default behavior of list.pop() in Python?
+A) Removes the first element
+B) Removes the last element (Correct)
+C) Returns None
+D) Raises an error
+Example: my_list = [1, 2, 3]; my_list.pop() will return 3.
+
+27. What kind of stack is used in function calls?
+A) Dynamic stack
+B) Call stack (Correct)
+C) Circular stack
+D) Static stack
+Example: The call stack keeps track of function calls
+
+
+
+
+
+
+You said:
+continue
+ChatGPT said:
+ChatGPT
+Sure! Here are more objective-type questions related to stacks in Python:
+
+28. Which module in Python provides a more efficient way to implement a stack than a list?
+A) math
+B) collections (Correct)
+C) random
+D) itertools
+Example: Using deque from the collections module to create a stack.
+
+29. How do you clear all elements from a stack in Python?
+A) stack.clear() (Correct)
+B) stack.remove_all()
+C) stack.empty()
+D) stack.reset()
+Example: stack.clear() removes all elements from the stack.
+
+30. In which scenario is a stack used for depth-first search?
+A) Graph traversal (Correct)
+B) Binary search
+C) Queue management
+D) Sorting algorithms
+Example: A stack can be used to explore paths in a graph or tree structure.
+
+31. What will the following code output?
+python
+Copy code
+stack = []
+stack.append(1)
+stack.append(2)
+print(stack.pop())
+A) 1
+B) 2 (Correct)
+C) None
+D) 0
+Example: The last element added (2) is removed and returned.
+
+32. What kind of stack is implemented using linked nodes?
+A) Array stack
+B) Dynamic stack (Correct)
+C) Circular stack
+D) Static stack
+Example: A linked list can be used to create a stack where each node points to the next.
+
+33. How is a stack typically used in recursion?
+A) To store global variables
+B) To manage return addresses and local variables (Correct)
+C) To perform calculations
+D) To sort elements
+Example: Each recursive call pushes data onto the call stack.
+
+34. What is the primary limitation of using a fixed-size stack?
+A) Inefficient memory usage
+B) Stack overflow if too many elements are pushed (Correct)
+C) Slow performance
+D) Inability to access elements
+Example: If a fixed-size stack is full, further push operations can cause overflow.
+
+35. Which of the following operations can be performed on an empty stack?
+A) pop (Correct)
+B) peek
+C) push
+D) all of the above
+Example: Attempting to pop from an empty stack raises an error, but push can still be performed.
+
+36. What happens when you call stack.append() multiple times?
+A) It removes elements.
+B) It adds elements to the top of the stack (Correct)
+C) It returns the stack size.
+D) It raises an error.
+Example: stack.append(5) adds 5 to the top of the stack.
+
+37. What does it mean when we say a stack is "dynamic"?
+A) Its size is fixed.
+B) It can grow and shrink in size. (Correct)
+C) It cannot change after creation.
+D) It does not use memory efficiently.
+Example: A dynamic stack can handle varying numbers of elements without predefined limits.
+
+38. Which of the following is not a stack application?
+A) Expression evaluation
+B) Syntax parsing
+C) Binary tree traversal
+D) Hash table storage (Correct)
+Example: Hash tables use a different structure for storing key-value pairs.
+
+39. How would you implement a stack in Python using a list?
+A) Using a tuple.
+B) Using a set.
+C) Using a list with append and pop methods. (Correct)
+D) Using a dictionary.
+Example: stack = []; stack.append(1); stack.pop().
+
+40. What will the following code output?
+python
+Copy code
+stack = [1, 2, 3]
+stack.pop()
+stack.pop()
+print(stack.pop())
+A) 1 (Correct)
+B) 2
+C) 3
+D) None
+Example: The last pop operation will return the remaining element, which is 1.
+
+41. What will happen if you perform stack[-1] = 10 on a stack?
+A) Sets the top element to 10. (Correct)
+B) Raises an error.
+C) Pops the top element.
+D) Appends 10 to the stack.
+Example: If stack = [1, 2, 3], executing stack[-1] = 10 will change it to [1, 2, 10].
+
+42. Which of the following methods removes the top item from a stack?
+A) pop() (Correct)
+B) remove()
+C) discard()
+D) extract()
+Example: Using stack.pop() will remove and return the last added element.
+
+43. When using deque from the collections module, which operation can be performed efficiently?
+A) insert at the end
+B) insert at the beginning
+C) both push and pop (Correct)
+D) random access
+Example: stack.append(1) and stack.appendleft(0) are both efficient.
+
+44. What will stack.size() return if the stack is [1, 2, 3]?
+A) 2
+B) 3 (Correct)
+C) 0
+D) 1
+Example: len(stack) or stack.size() (if implemented) will show the number of elements.
+
+45. What kind of data structure is a stack?
+A) Linear (Correct)
+B) Non-linear
+C) Constant
+D) None of the above
+Example: Stacks are linear structures as they maintain a sequential order.
+
+46. Which of the following is a characteristic of a stack?
+A) Ordered
+B) Dynamic
+C) LIFO (Correct)
+D) None of the above
+Example: A stack's last element added is the first to be removed.
+
+47. Which built-in Python function can be used to reverse the order of elements in a stack?
+A) stack.reverse() (Correct)
+B) stack.flip()
+C) stack.rotate()
+D) stack.sort()
+Example: Calling stack.reverse() will reverse the order of the elements.
+
+48. Which statement is true about a stack's memory usage?
+A) Fixed memory allocation
+B) Dynamic memory allocation (Correct)
+C) No memory allocation
+D) Uncontrollable memory usage
+Example: A stack can grow and use memory as needed, depending on the operations performed.
+
+49. What will be the output of the following code?
+python
+Copy code
+stack = []
+stack.append('A')
+stack.append('B')
+stack.pop()
+stack.append('C')
+print(stack)
+A) ['A', 'B']
+B) ['A'] (Correct)
+C) ['C', 'B']
+D) ['C']
+Example: After popping 'B', the stack contains only 'A'.
+
+50. Which scenario is not a suitable application of a stack?
+A) Undo mechanisms
+B) Parentheses matching
+C) Sorting elements (Correct)
+D) Backtracking algorithms
+Example: Stacks do not provide sorted order; they just store elements in a LIFO manner.
+
+51. How do you create a stack with a limited size in Python?
+A) Using a list
+B) Using a queue
+C) Using a custom class to check size (Correct)
+D) Using a dictionary
+Example: You can create a class that raises an error when the stack size limit is reached.
+
+52. Which method is not typically associated with a stack?
+A) push
+B) pop
+C) top
+D) find (Correct)
+Example: Finding an element is not a stack operation; it involves accessing multiple elements.
+
+53. How can you implement the "peek" operation in a stack?
+A) Using pop()
+B) Using the last index (Correct)
+C) Using remove()
+D) Using clear()
+Example: top_element = stack[-1] allows you to look at the top item without removing it.
+
+54. In what scenarios do we commonly use stacks?
+A) Managing current tasks
+B) Backtracking algorithms **
+
+
+
+
+
+You said:
+continue
+ChatGPT said:
+ChatGPT
+Certainly! Here’s the continuation of the objective-type questions related to stacks in Python:
+
+54. In what scenarios do we commonly use stacks?
+A) Managing current tasks
+B) Backtracking algorithms (Correct)
+C) Hashing functions
+D) Quick sort
+Example: Stacks are commonly used in algorithms for exploring all possible configurations, like in maze solving.
+
+55. What will happen if you push an element to a full stack (in a fixed-size implementation)?
+A) The element will be added successfully.
+B) The stack will automatically resize.
+C) A stack overflow error occurs. (Correct)
+D) The top element will be removed.
+Example: If a stack of size 3 already has 3 elements, pushing a new one raises an overflow error.
+
+56. Which statement about stack implementation is true?
+A) Stacks can only be implemented using arrays.
+B) Stacks can be implemented using linked lists. (Correct)
+C) Stacks require recursion.
+D) Stacks do not require any data structure.
+Example: A stack can use a linked list where each node points to the next.
+
+57. Which of the following statements is true about a stack in Python?
+A) You can access any element directly.
+B) The top of the stack is always the last element. (Correct)
+C) Stacks are not dynamic.
+D) You cannot remove elements.
+Example: The last item added can be accessed using stack[-1] before it is popped.
+
+58. What is the time complexity for accessing an element in a stack?
+A) O(n)
+B) O(1) (Correct)
+C) O(log n)
+D) O(n^2)
+Example: Accessing the top element of a stack is done in constant time.
+
+59. Which of the following operations is not allowed in a stack?
+A) push
+B) pop
+C) peek
+D) insert at a specific position (Correct)
+Example: You cannot insert elements at arbitrary positions in a stack; they must be added to the top.
+
+60. What type of data structure is a stack primarily used for?
+A) Non-linear data structure
+B) Linear data structure (Correct)
+C) Key-value pairs
+D) Graph structure
+Example: Stacks maintain a linear arrangement of elements in a last-in-first-out manner.
+
+61. What will the following code output?
+python
+Copy code
+stack = [1, 2, 3]
+stack.append(4)
+print(stack)
+A) [1, 2, 3]
+B) [4, 1, 2, 3]
+C) [1, 2, 3, 4] (Correct)
+D) [3, 2, 1, 4]
+Example: The stack will show the newly added element at the end.
+
+62. Which of the following is a disadvantage of using a stack?
+A) Dynamic size
+B) Limited access (Correct)
+C) Memory-efficient
+D) Supports recursion
+Example: You can only access the top element, making it less versatile for certain operations.
+
+63. How can you implement a stack using the deque class?
+A) stack = list()
+B) stack = deque() (Correct)
+C) stack = []
+D) stack = set()
+Example: from collections import deque; stack = deque() initializes an empty deque as a stack.
+
+64. What will happen if you perform stack.append(None) on a stack?
+A) It raises an error.
+B) It adds None to the stack. (Correct)
+C) It removes the last element.
+D) It returns None.
+Example: stack.append(None) successfully adds a None value to the stack.
+
+65. Which method would you use to remove the last added element from a stack?
+A) delete()
+B) pop() (Correct)
+C) discard()
+D) remove_last()
+Example: last_element = stack.pop() removes and returns the top item from the stack.
+
+66. How would you check the top element of a stack without removing it?
+A) stack.pop()
+B) stack[-1] (Correct)
+C) stack.peek()
+D) stack.last()
+Example: top_item = stack[-1] allows you to view the top element.
+
+67. What will be the output of the following code?
+python
+Copy code
+stack = [10, 20, 30]
+stack.pop()
+stack.append(40)
+print(stack)
+A) [10, 20, 30]
+B) [10, 20] (Correct)
+C) [30, 40]
+D) [40, 20, 10]
+Example: The stack will show [10, 20] after popping 30 and adding 40.
+
+68. Which stack operation would be used in an algorithm for depth-first search?
+A) enqueue
+B) pop (Correct)
+C) sort
+D) iterate
+Example: Depth-first search uses a stack to backtrack to previous nodes.
+
+69. In Python, how do you represent an empty stack?
+A) stack = []
+B) stack = ()
+C) stack = {}
+D) stack = None (Correct)
+Example: An empty list, stack = [], can represent an empty stack.
+
+70. What will the following code output?
+python
+Copy code
+stack = [1, 2, 3]
+top = stack.pop()
+print(top)
+A) 1
+B) 2
+C) 3 (Correct)
+D) None
+Example: The last item in the stack, 3, is popped and printed.
+
+71. Which of the following would be an example of a stack overflow?
+A) Popping elements from an empty stack.
+B) Continuously pushing elements without popping from a fixed-size stack. (Correct)
+C) Checking the stack size.
+D) Pushing elements into an empty stack.
+Example: Exceeding the capacity of a fixed-size stack by continuously adding elements.
+
+72. How do you create a stack with a maximum size using a class in Python?
+A) Define a limit in the push method. (Correct)
+B) Use a list.
+C) Use a tuple.
+D) Use a dictionary.
+Example: Implementing a class that raises an exception when the limit is reached in the push method.
+
+73. Which operation would you use to see if a stack is empty?
+A) is_empty() (Correct)
+B) check_empty()
+C) stack.size() == 0
+D) stack.count()
+Example: Implementing is_empty() would return True for an empty stack.
+
+74. How would you remove the last two elements from a stack?
+A) Use pop() twice. (Correct)
+B) Use clear().
+C) Use remove_last(2).
+D) Use a loop.
+Example: stack.pop(); stack.pop() will remove the last two elements.
+
+75. Which of the following statements is false regarding stacks?
+A) They allow direct access to any element. (Correct)
+B) They follow LIFO order.
+C) They can grow dynamically.
+D) They can be implemented using arrays or linked lists.
+Example: Stacks do not support direct access like arrays do.
+
+76. How can you implement a stack using a list comprehension?
+A) stack = [i for i in range(5)] (Correct)
+B) stack = list(range(5))
+C) Both A and B
+D) None of the above
+Example: stack = [i for i in range(5)] creates a stack-like list with values 0 to 4.
+
+77. What is the typical way to handle errors in stack operations?
+A) Ignore the errors.
+B) Use exception handling. (Correct)
+C) Display a warning message.
+D) Restart the program.
+Example: Wrapping operations in a try-except block to manage errors like popping from an empty stack.
+
+78. What is the best use case for a stack?
+A) Implementing a queue
+B) Tracking the execution of function calls (Correct)
+
+
+
+
+
+You said:
+continue
+ChatGPT said:
+ChatGPT
+Here’s the continuation with more objective-type questions related to stacks in Python:
+
+78. What is the best use case for a stack?
+A) Implementing a queue
+B) Tracking the execution of function calls (Correct)
+C) Sorting elements
+D) Storing data in a hash table
+Example: Stacks are used in recursion and to manage function calls, enabling backtracking.
+
+79. In the context of stack data structures, what does "LIFO" stand for?
+A) Last In, First Out (Correct)
+B) Last In, First Ordered
+C) Last Indexed, First Out
+D) Least Important, First Out
+Example: In a stack, the last element added is the first one to be removed.
+
+80. Which built-in function can you use to count the number of elements in a stack implemented as a list?
+A) count()
+B) size()
+C) len() (Correct)
+D) total()
+Example: len(stack) returns the number of elements currently in the stack.
+
+81. What happens if you call pop() on an empty stack?
+A) It returns None.
+B) It raises an IndexError. (Correct)
+C) It does nothing.
+D) It resets the stack.
+Example: Calling stack.pop() on an empty list will raise IndexError.
+
+82. What type of stack allows you to add and remove elements from both ends?
+A) Array stack
+B) Double-ended queue (deque) (Correct)
+C) Static stack
+D) Circular stack
+Example: A deque allows operations to be performed from both ends efficiently.
+
+83. Which of the following operations is not valid for a stack?
+A) push
+B) pop
+C) peek
+D) sort (Correct)
+Example: You cannot sort elements directly in a stack as it follows LIFO order.
+
+84. How would you implement a stack that automatically resizes when full?
+A) Use a fixed-size array.
+B) Use a linked list.
+C) Use a dynamic array that doubles in size. (Correct)
+D) Use a queue.
+Example: A dynamic array can resize to accommodate more elements when the limit is reached.
+
+85. What will the following code output?
+python
+Copy code
+stack = ['a', 'b', 'c']
+stack.pop()
+stack.append('d')
+print(stack)
+A) ['a', 'b', 'c']
+B) ['a', 'b', 'd'] (Correct)
+C) ['c', 'd']
+D) ['d']
+Example: After popping 'c' and adding 'd', the stack will contain ['a', 'b', 'd'].
+
+86. Which data structure is often used to implement the backtracking algorithm?
+A) Queue
+B) Stack (Correct)
+C) Linked List
+D) Tree
+Example: Backtracking uses a stack to remember previous states and explore new paths.
+
+87. What will the following code output?
+python
+Copy code
+stack = []
+stack.append(1)
+stack.append(2)
+stack.append(3)
+print(stack.pop())
+print(stack.pop())
+A) 1, 2
+B) 3, 2 (Correct)
+C) 2, 1
+D) 3, 1
+Example: The last two elements added (3 and then 2) are popped from the stack.
+
+88. How can you check if a stack contains a specific element?
+A) Using the in operator (Correct)
+B) Using count()
+C) Using find()
+D) Using search()
+Example: if 2 in stack: checks if the value 2 is present in the stack.
+
+89. What is the main difference between a stack and a queue?
+A) Stack follows FIFO; Queue follows LIFO.
+B) Stack follows LIFO; Queue follows FIFO. (Correct)
+C) Stack allows random access; Queue does not.
+D) Stack cannot grow dynamically; Queue can.
+Example: A stack removes the last item added first, while a queue removes the first item added first.
+
+90. Which statement correctly describes the behavior of a stack?
+A) The first element added is the first to be removed.
+B) The last element added is the first to be removed. (Correct)
+C) Elements can be removed from the middle.
+D) You can access elements in any order.
+Example: In a stack, the last element pushed is the first one popped.
+
+91. How do you implement a stack using Python's collections module?
+A) stack = list()
+B) stack = deque() (Correct)
+C) stack = dict()
+D) stack = []
+Example: You can create a stack using from collections import deque; stack = deque().
+
+92. What will the following code output?
+python
+Copy code
+stack = [1, 2, 3, 4]
+print(stack.pop())
+print(stack.pop())
+A) 1, 2
+B) 3, 2
+C) 4, 3 (Correct)
+D) 2, 1
+Example: The stack pops the last two elements added, which are 4 and 3.
+
+93. Which of the following best describes a stack's pop operation?
+A) It adds an element to the top of the stack.
+B) It removes the top element and returns it. (Correct)
+C) It checks if the stack is empty.
+D) It clears all elements.
+Example: Calling stack.pop() removes and returns the most recently added element.
+
+94. When implementing a stack, what is a common method to check if it is full?
+A) Check the size against a fixed limit. (Correct)
+B) Use pop() to test.
+C) Attempt to push an element.
+D) Use an iterator.
+Example: If a stack has a max size, you can check if len(stack) >= max_size.
+
+95. What is a common way to initialize an empty stack?
+A) stack = None
+B) stack = {}
+C) stack = [] (Correct)
+D) stack = ()
+Example: stack = [] initializes an empty list that can be used as a stack.
+
+96. Which statement is true regarding stack overflow?
+A) It occurs when you push an element into an empty stack.
+B) It occurs when the stack exceeds its maximum size. (Correct)
+C) It occurs when you pop an element from an empty stack.
+D) It occurs when the stack has no elements.
+Example: A fixed-size stack will overflow if you exceed the limit set during its creation.
+
+97. How do you find the number of elements in a stack?
+A) Use stack.size()
+B) Use len(stack) (Correct)
+C) Use count(stack)
+D) Use get_count(stack)
+Example: number_of_elements = len(stack) provides the count of items in the stack.
+
+98. Which of the following scenarios would typically require a stack?
+A) Keeping track of the order of tasks
+B) Undoing recent changes in a text editor (Correct)
+C) Managing a list of available products
+D) Storing user profiles
+Example: Stacks can keep track of actions in applications to allow undo functionality.
+
+99. How can you effectively implement a stack in Python?
+A) Use arrays
+B) Use linked lists
+C) Use Python's built-in list or collections.deque (Correct)
+D) All of the above
+Example: Both lists and deques can effectively implement stack functionality.
+
+100. What is a common operation that stacks are not designed for?
+A) Pushing elements
+B) Popping elements
+C) Accessing elements in any order (Correct)
+D) Checking the top element
+Example: Stacks only allow access to the top element, not to others in arbitrary order.

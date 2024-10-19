@@ -1,0 +1,486 @@
+Linear Regression Machine learning:
+
+1. What is linear regression used for?
+A) Classification
+B) Regression
+C) Clustering
+D) Association
+
+Correct Answer: B) Regression
+Explanation: Linear regression is primarily used for predicting continuous outcomes based on one or more predictors.
+
+2. Which of the following is a key assumption of linear regression?
+A) Data is normally distributed
+B) Homoscedasticity
+C) Multicollinearity
+D) All of the above
+
+Correct Answer: B) Homoscedasticity
+Explanation: Homoscedasticity means that the variance of the errors is constant across all levels of the independent variable(s).
+
+3. What is the equation of a simple linear regression model?
+A) 
+𝑦
+=
+𝑚
+𝑥
++
+𝑏
+y=mx+b
+B) 
+𝑦
+=
+𝑎
+𝑥
+2
++
+𝑏
+𝑥
++
+𝑐
+y=ax 
+2
+ +bx+c
+C) 
+𝑦
+=
+𝑎
++
+𝑏
+𝑋
+y=a+bX
+D) Both A and C
+
+Correct Answer: D) Both A and C
+Explanation: Both forms represent a simple linear relationship, where 
+𝑚
+m or 
+𝑏
+b is the slope and 
+𝑏
+b or 
+𝑎
+a is the y-intercept.
+
+4. What does the R-squared value indicate?
+A) The strength of the linear relationship
+B) The amount of variance explained by the model
+C) The slope of the regression line
+D) None of the above
+
+Correct Answer: B) The amount of variance explained by the model
+Explanation: R-squared measures the proportion of variance in the dependent variable that can be predicted from the independent variable(s).
+
+5. What is multicollinearity?
+A) When independent variables are correlated
+B) When the model fits the data well
+C) When residuals are not normally distributed
+D) None of the above
+
+Correct Answer: A) When independent variables are correlated
+Explanation: Multicollinearity occurs when two or more predictors in a regression model are highly correlated, potentially leading to unreliable coefficient estimates.
+
+6. Which method is commonly used to estimate the coefficients in linear regression?
+A) Maximum likelihood estimation
+B) Least squares estimation
+C) Gradient descent
+D) Bayesian inference
+
+Correct Answer: B) Least squares estimation
+Explanation: Least squares estimation minimizes the sum of the squared residuals to find the best-fitting line.
+
+7. What does a negative coefficient in a linear regression model imply?
+A) The predictor increases the dependent variable
+B) The predictor decreases the dependent variable
+C) There is no relationship
+D) The model is overfitting
+
+Correct Answer: B) The predictor decreases the dependent variable
+Explanation: A negative coefficient indicates that as the predictor variable increases, the dependent variable tends to decrease.
+
+8. What is the purpose of the intercept in a linear regression model?
+A) To represent the slope
+B) To represent the value of the dependent variable when all predictors are zero
+C) To adjust for multicollinearity
+D) None of the above
+
+Correct Answer: B) To represent the value of the dependent variable when all predictors are zero
+Explanation: The intercept is the expected value of the dependent variable when all independent variables are equal to zero.
+
+9. Which of the following techniques can help improve a linear regression model?
+A) Feature scaling
+B) Adding polynomial terms
+C) Removing multicollinearity
+D) All of the above
+
+Correct Answer: D) All of the above
+Explanation: These techniques can improve model performance by addressing issues related to scale, non-linearity, and correlation.
+
+10. What does the term "residuals" refer to in linear regression?
+A) The difference between predicted and actual values
+B) The slope of the regression line
+C) The total variance in the data
+D) The independent variables
+
+Correct Answer: A) The difference between predicted and actual values
+Explanation: Residuals are the errors made by the model, calculated as the observed value minus the predicted value.
+
+11. What is the main purpose of using a validation dataset in linear regression?
+A) To train the model
+B) To evaluate model performance
+C) To tune hyperparameters
+D) To visualize data
+
+Correct Answer: B) To evaluate model performance
+Explanation: The validation dataset helps assess how well the model generalizes to unseen data.
+
+12. Which of the following could indicate that a linear regression model is a poor fit?
+A) Low R-squared value
+B) High R-squared value
+C) A perfect linear relationship
+D) Residuals are randomly distributed
+
+Correct Answer: A) Low R-squared value
+Explanation: A low R-squared indicates that the model explains very little of the variance in the dependent variable.
+
+13. What does the term "overfitting" mean in the context of linear regression?
+A) The model captures noise in the data
+B) The model generalizes well to unseen data
+C) The model has too few predictors
+D) The model is simple and interpretable
+
+Correct Answer: A) The model captures noise in the data
+Explanation: Overfitting occurs when the model is too complex and learns the noise instead of the underlying pattern.
+
+14. What is a common technique to detect multicollinearity?
+A) Checking residual plots
+B) Variance inflation factor (VIF)
+C) Cross-validation
+D) Normal probability plot
+
+Correct Answer: B) Variance inflation factor (VIF)
+Explanation: VIF quantifies how much the variance is inflated due to multicollinearity among the predictors.
+
+15. What is the consequence of having heteroscedasticity in a linear regression model?
+A) Coefficients become unbiased
+B) Standard errors are biased, leading to unreliable hypothesis tests
+C) The model becomes interpretable
+D) Residuals are normally distributed
+
+Correct Answer: B) Standard errors are biased, leading to unreliable hypothesis tests
+Explanation: Heteroscedasticity violates the assumption of constant variance, affecting the validity of statistical tests.
+
+16. What is the main purpose of regularization techniques like Lasso and Ridge in linear regression?
+A) To improve interpretability
+B) To reduce overfitting
+C) To increase complexity
+D) To eliminate multicollinearity
+
+Correct Answer: B) To reduce overfitting
+Explanation: Regularization techniques add a penalty to the loss function, which helps prevent overfitting.
+
+17. In which situation would you prefer using Ridge regression over Lasso regression?
+A) When you need feature selection
+B) When multicollinearity is present
+C) When the dataset has no outliers
+D) When the model is perfectly linear
+
+Correct Answer: B) When multicollinearity is present
+Explanation: Ridge regression is more effective at handling multicollinearity without eliminating predictors.
+
+18. What is the primary goal of linear regression?
+A) To classify data into categories
+B) To predict the value of a dependent variable
+C) To minimize the number of predictors
+D) To visualize data
+
+Correct Answer: B) To predict the value of a dependent variable
+Explanation: The primary aim of linear regression is to predict a continuous outcome based on one or more predictors.
+
+19. What does the term "least squares" refer to in linear regression?
+A) The method of minimizing the sum of absolute residuals
+B) The method of minimizing the sum of squared residuals
+C) The process of selecting the best model
+D) The technique used for feature selection
+
+Correct Answer: B) The method of minimizing the sum of squared residuals
+Explanation: Least squares estimation minimizes the squared differences between observed and predicted values.
+
+20. Which of the following would be a problem if the residuals of a linear regression model show a pattern?
+A) The model fits well
+B) The assumptions of linear regression are violated
+C) The model has low bias
+D) The data is normally distributed
+
+Correct Answer: B) The assumptions of linear regression are violated
+Explanation: Patterns in residuals indicate that the model may not have captured the relationship accurately.
+
+21. What type of variable is the dependent variable in linear regression?
+A) Categorical
+B) Continuous
+C) Binary
+D) Ordinal
+
+Correct Answer: B) Continuous
+Explanation: The dependent variable in linear regression is typically continuous, as it represents an outcome to be predicted.
+
+22. Which of the following is NOT a type of linear regression?
+A) Simple linear regression
+B) Multiple linear regression
+C) Polynomial regression
+D) Logistic regression
+
+Correct Answer: D) Logistic regression
+Explanation: Logistic regression is used for binary outcomes, not for predicting continuous values.
+
+23. What does it mean if a regression model's p-value for a predictor is less than 0.05?
+A) The predictor is not significant
+B) The predictor is significant
+C) The model is overfitting
+D) There is multicollinearity
+
+Correct Answer: B) The predictor is significant
+Explanation: A low p-value indicates that there is strong evidence against the null hypothesis, suggesting that the predictor significantly affects the dependent variable.
+
+24. What does the term "interaction term" refer to in regression analysis?
+A) A term that represents the combined effect of two variables
+B) A term that adds a polynomial feature
+C) A constant term in the model
+D) A term that removes multicollinearity
+
+Correct Answer: A) A term that represents the combined effect of two variables
+Explanation: Interaction terms are used to capture the effect of two variables together, which may differ from their individual effects.
+
+25. What is the main advantage of using polynomial regression?
+A) It reduces the number of predictors
+B) It captures non-linear relationships
+C) It eliminates the need for regularization
+D) It simplifies the model
+
+Correct Answer: B) It captures non-linear relationships
+Explanation: Polynomial regression allows for modeling non-linear relationships between the predictors and the dependent variable.
+
+26. In multiple linear regression, how do you interpret the coefficients?
+A) They represent the total effect on the dependent variable
+B) They represent the average effect on the dependent variable
+C) They represent the effect of the predictor on the dependent variable, holding other predictors constant
+D) They represent the error in the predictions
+
+Correct Answer: C) They represent the effect of the predictor on the dependent variable, holding other predictors constant
+Explanation: Each coefficient indicates how much the dependent variable is expected to change with a one-unit increase in that predictor.
+
+27. What is a common way to visualize the results of a linear regression model?
+A) Histogram
+B) Box plot
+C) Scatter plot with a regression line
+D) Heatmap
+
+Correct Answer: C) Scatter plot with a regression line
+Explanation: A scatter plot with the regression line helps visualize the relationship between the independent and dependent variables.
+
+28. What is a major limitation of linear regression?
+A) It is easy to interpret
+B) It requires large datasets
+C) It assumes a linear relationship
+D) It can handle multicollinearity
+
+Correct Answer: C) It assumes a linear relationship
+Explanation: Linear regression may not perform well when the true relationship is non-linear.
+
+29. What effect does adding more predictors to a linear regression model generally have?
+A) It always improves model accuracy
+B) It may lead to overfitting
+C) It eliminates multicollinearity
+D) It simplifies the model
+
+Correct Answer: B) It may lead to overfitting
+Explanation: Adding more predictors can capture noise rather than true relationships, which may lead to overfitting.
+
+30. Which metric is commonly used to evaluate the performance of a regression model?
+A) Accuracy
+B) F1 Score
+C) Mean Absolute Error (MAE)
+D) Precision
+
+Correct Answer: C) Mean Absolute Error (MAE)
+Explanation: MAE measures the average magnitude of the errors in a set of predictions, without considering their direction.
+
+31. Which of the following is NOT a part of the linear regression evaluation process?
+A) Checking residuals
+B) Examining p-values
+C) Cross-validation
+D) Performing clustering
+
+Correct Answer: D) Performing clustering
+Explanation: Clustering is unrelated to the evaluation of regression models.
+
+32. What does it mean if the residual plot shows a funnel shape?
+A) The model is linear
+B) The variance of errors is constant
+C) There is heteroscedasticity
+D) The predictors are perfectly correlated
+
+Correct Answer: C) There is heteroscedasticity
+Explanation: A funnel shape indicates that the variability of the residuals increases with the value of the predictors.
+
+33. What is the effect of outliers on a linear regression model?
+A) They have no effect
+B) They improve the model
+C) They can skew the results
+D) They simplify the model
+
+Correct Answer: C) They can skew the results
+Explanation: Outliers can disproportionately influence the slope and intercept of the regression line.
+
+34. Which of the following methods can be used to identify influential points in linear regression?
+A) Cook's Distance
+B) K-means Clustering
+C) Chi-Squared Test
+D) Principal Component Analysis
+
+Correct Answer: A) Cook's Distance
+Explanation: Cook's Distance helps identify points that have a significant influence on the fitted regression model.
+
+35. What does it mean when the adjusted R-squared is significantly lower than the R-squared?
+A) The model fits well
+B) The model is likely overfitting
+C) There are too many predictors
+D) The data is well-distributed
+
+Correct Answer: C) There are too many predictors
+Explanation: A large difference suggests that adding predictors does not improve the model's ability to explain the variance.
+
+36. What is the primary purpose of cross-validation in linear regression?
+A) To increase the number of predictors
+B) To reduce bias
+C) To assess how the results of a statistical analysis will generalize to an independent dataset
+D) To optimize the intercept
+
+Correct Answer: C) To assess how the results of a statistical analysis will generalize to an independent dataset
+Explanation: Cross-validation helps validate the model's performance on unseen data.
+
+37. Which technique can help transform non-linear relationships into linear ones?
+A) Normalization
+B) Logarithmic transformation
+C) Scaling
+D) Cross-validation
+
+Correct Answer: B) Logarithmic transformation
+Explanation: Logarithmic transformations can help stabilize variance and make relationships more linear.
+
+38. What is the effect of regularization on linear regression coefficients?
+A) It increases all coefficients
+B) It reduces all coefficients toward zero
+C) It eliminates all coefficients
+D) It doubles all coefficients
+
+Correct Answer: B) It reduces all coefficients toward zero
+Explanation: Regularization techniques like Lasso and Ridge apply a penalty that shrinks coefficients, particularly in the presence of multicollinearity.
+
+39. Which of the following regression models is most suitable for predicting a binary outcome?
+A) Linear regression
+B) Polynomial regression
+C) Logistic regression
+D) Ridge regression
+
+Correct Answer: C) Logistic regression
+Explanation: Logistic regression is specifically designed for binary outcome predictions.
+
+40. In which scenario would you use interaction terms in a linear regression model?
+A) When predictors are independent
+B) When the effect of one predictor depends on another
+C) When all predictors are categorical
+D) When the model is overfitting
+
+Correct Answer: B) When the effect of one predictor depends on another
+Explanation: Interaction terms allow you to assess how the relationship between a predictor and the dependent variable changes at different levels of another predictor.
+
+41. What does a high p-value indicate for a predictor in a regression model?
+A) The predictor is significant
+B) The predictor is not significant
+C) The model is overfitting
+D) The predictor has high multicollinearity
+
+Correct Answer: B) The predictor is not significant
+Explanation: A high p-value suggests insufficient evidence to conclude that the predictor has an effect on the dependent variable.
+
+42. Which method can be used to visualize the relationship between two variables in linear regression?
+A) Box plot
+B) Bar chart
+C) Scatter plot
+D) Pie chart
+
+Correct Answer: C) Scatter plot
+Explanation: A scatter plot effectively visualizes the relationship between two continuous variables.
+
+43. What is the main goal of hypothesis testing in linear regression?
+A) To increase the number of predictors
+B) To determine if the model is linear
+C) To assess whether the predictors significantly affect the dependent variable
+D) To simplify the model
+
+Correct Answer: C) To assess whether the predictors significantly affect the dependent variable
+Explanation: Hypothesis testing helps evaluate the significance of each predictor's impact on the outcome.
+
+44. What does it mean if a regression model has a high bias?
+A) The model is very complex
+B) The model consistently underfits the data
+C) The model overfits the training data
+D) The model has high variance
+
+Correct Answer: B) The model consistently underfits the data
+Explanation: High bias indicates that the model is too simple to capture the underlying pattern in the data.
+
+45. What happens when you standardize predictors in a linear regression model?
+A) The predictors are transformed to have a mean of 0 and standard deviation of 1
+B) The model will always overfit
+C) The coefficients become non-interpretable
+D) The model accuracy decreases
+
+Correct Answer: A) The predictors are transformed to have a mean of 0 and standard deviation of 1
+Explanation: Standardization helps normalize the scale of predictors, making the model more robust.
+
+46. What is a common issue that can arise from using a polynomial regression model?
+A) Multicollinearity
+B) Underfitting
+C) High interpretability
+D) Low bias
+
+Correct Answer: A) Multicollinearity
+Explanation: Polynomial terms can lead to multicollinearity, where predictors become highly correlated.
+
+47. How can you determine if your regression model is overfitting?
+A) By evaluating performance on training data only
+B) By checking R-squared on training data
+C) By comparing performance on training and validation datasets
+D) By examining coefficients
+
+Correct Answer: C) By comparing performance on training and validation datasets
+Explanation: A significant drop in performance on the validation dataset compared to the training dataset indicates overfitting.
+
+48. What is the consequence of using a linear regression model with categorical variables?
+A) The model will be biased
+B) Categorical variables must be encoded
+C) The model cannot handle categorical variables
+D) All variables must be numeric
+
+Correct Answer: B) Categorical variables must be encoded
+Explanation: Categorical variables need to be transformed into a numerical format (e.g., one-hot encoding) to be used in linear regression.
+
+49. What does the F-statistic test in linear regression?
+A) The significance of individual predictors
+B) The overall significance of the regression model
+C) The goodness of fit of the model
+D) The distribution of residuals
+
+Correct Answer: B) The overall significance of the regression model
+Explanation: The F-statistic tests whether at least one predictor variable has a non-zero coefficient.
+
+50. Which of the following is a drawback of using simple linear regression?
+A) It is easy to implement
+B) It can only model linear relationships
+C) It requires large datasets
+D) It always provides accurate predictions
+
+Correct Answer: B) It can only model linear relationships
+Explanation: Simple linear regression is limited to capturing linear relationships, which may not be sufficient for more complex datasets.
